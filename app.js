@@ -124,7 +124,7 @@ app.delete('/districts/:districtId/', async (request, response) => {
 app.put('/districts/:districtId/', async (request, response) => {
   const {districtId} = request.params
   const districtDetails = request.body
-  const {districtName, stateId, cases, curved, active, deaths} = districtDetails
+  const {districtName, stateId, cases, cured, active, deaths} = districtDetails
   const updateDistrict = `
     UPDATE 
       district 
