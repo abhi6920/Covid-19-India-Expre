@@ -157,7 +157,7 @@ app.get('/states/:stateId/stats/', async (request, response) => {
 })
 
 //Returns a stateName based on district Id
-app.get('/districts/:distictId/details/', async (request, response) => {
+app.get('/districts/:districtId/details/', async (request, response) => {
   const {districtId} = request.params
   const stateDetails = `
     SELECT state_name 
